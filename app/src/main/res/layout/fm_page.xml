@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.it.nhozip.food.widgets.AutoScrollViewPager
+        android:id="@+id/scroll_pager"
+        android:layout_width="match_parent"
+        android:layout_height="240dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/scroll_pager"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="#fa0808"
+            android:id="@+id/title"
+            android:singleLine="true"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp" />
+
+        <com.it.nhozip.food.widgets.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:padding="5dp"
+            app:pageColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

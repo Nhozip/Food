@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+                <ImageView
+                    android:id="@+id/imgBia"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_bia" />
+
+                <ImageView
+                    android:id="@+id/imgAvata"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/ava"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thongtin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/tools"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="2dp">
+
+                <TextView
+                    android:id="@+id/txtNameFB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/anhbia"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="Ngước mắt nhìn đời"
+                    android:textColor="#131313"
+                    android:textSize="25dp" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thongtin"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/thongtin"
+                android:layout_weight="0.3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Page :"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/textView"
+                    android:layout_margin="4dp"
+                    android:layout_weight="3"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardCornerRadius="2dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="fb.com/food"
+                        android:textColor="#f90606"
+                        android:textSize="25dp"
+                        android:typeface="monospace" />
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="10dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/view"
+                    android:layout_alignStart="@+id/view"
+                    android:layout_below="@+id/view"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="Cập nhật món ngon mỗi ngày ,chi tiết vui lòng bạn truy cập page , Chia sẻ với bạn bè nhé Chúc bạn chúc bạn thành công!"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="#151515"
+                    android:textSize="18dp"
+                    android:typeface="sans" />
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+            <TextView
+               android:layout_marginTop="40dp"
+                android:layout_below="@+id/setting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|bottom"
+                android:text="Thank!"
+                android:textColor="#000" />
+
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

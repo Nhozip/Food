@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <RelativeLayout
+       android:padding="5dp"
+       android:layout_width="match_parent"
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_height="wrap_content">
+       <android.support.v4.view.ViewPager
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           android:id="@+id/pager"
+           android:visibility="gone"
+           android:layout_width="match_parent"
+           android:layout_height="220dp"
+           >
+       </android.support.v4.view.ViewPager>
+
+     <LinearLayout
+         android:layout_below="@+id/pager"
+        android:id="@+id/lnNew"
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+           <TextView
+               android:text="Món mới+ c.Nhập"
+               android:layout_width="wrap_content"
+               android:padding="10dp"
+               android:textColor="#000000"
+               android:layout_weight="3"
+               android:textSize="20dp"
+               android:layout_height="match_parent" />
+           <TextView
+               android:text="Xem thêm"
+               android:padding="10dp"
+               android:typeface="normal"
+               android:textColor="#04c12a"
+               android:textSize="20dp"
+               android:layout_weight="1"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:id="@+id/more_new"
+               android:onClick="onClickMore" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:layout_height="0dp">
+           <android.support.v7.widget.RecyclerView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/rVNew"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+     </LinearLayout>
+      <LinearLayout
+          android:id="@+id/lnHot"
+          android:layout_below="@+id/lnNew"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_weight="1"
+             android:layout_height="0dp">
+            <TextView
+                android:text="Sinh viên"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="3"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:text="Xem thêm"
+                android:padding="10dp"
+                android:typeface="normal"
+                android:textColor="#04c12a"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/more_student"
+                android:onClick="onClickMore" />
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_weight="3"
+             android:layout_height="0dp">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rVHit"></android.support.v7.widget.RecyclerView>
+         </LinearLayout>
+      </LinearLayout>
+      <LinearLayout
+          android:id="@+id/lnMBac"
+          android:layout_below="@+id/lnHot"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_weight="1"
+             android:layout_height="0dp">
+            <TextView
+                android:text="Miền Bắc"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="3"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:text="Xem thêm"
+                android:padding="10dp"
+                android:typeface="normal"
+                android:textColor="#04c12a"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/more_bac"
+                android:onClick="onClickMore" />
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_weight="3"
+             android:layout_height="0dp">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rVBac"></android.support.v7.widget.RecyclerView>
+         </LinearLayout>
+      </LinearLayout>
+      <LinearLayout
+          android:id="@+id/lnMTrung"
+          android:layout_below="@+id/lnMBac"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_weight="1"
+             android:layout_height="0dp">
+            <TextView
+                android:text="Miền Trung"
+                android:layout_width="wrap_content"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:text="Xem thêm"
+                android:padding="10dp"
+                android:typeface="normal"
+                android:textColor="#04c12a"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/more_trung"
+                android:onClick="onClickMore" />
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_weight="3"
+             android:layout_height="0dp">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rVTrung"></android.support.v7.widget.RecyclerView>
+         </LinearLayout>
+      </LinearLayout>
+      <LinearLayout
+          android:id="@+id/lnMNam"
+          android:layout_below="@+id/lnMTrung"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_weight="1"
+             android:layout_height="0dp">
+            <TextView
+                android:text="Miền Nam"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="3"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:text="Xem thêm"
+                android:padding="10dp"
+                android:typeface="normal"
+                android:textColor="#04c12a"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/more_nam"
+                android:onClick="onClickMore" />
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_weight="3"
+             android:layout_height="0dp">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rVNam"></android.support.v7.widget.RecyclerView>
+         </LinearLayout>
+      </LinearLayout>
+   </RelativeLayout>

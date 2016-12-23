@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="bg_nav">#514f4f</color>
+    <color name="white">#161616</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="primary">#54f53f</color>
+    <color name="primary_dark">#0097A7</color>
+    <color name="accent">#FFEB3B</color>
+    <color name="accent_translucent">#80FFEB3B</color>
+    <color name="accent_bright">#FFF493</color>
+
+</resources>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Food</string>
+    <string name="admin"><u>by Nhozip</u></string>
+    <string name="loading_text_error">Lỗi kết nối!</string>
+    <string name="text_retry">Tải lại!</string>
+    <string name="facebook_app_id">623690207809755</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="nguyenlieu">
++ 15 Gr Cây kỉ tử khô"\n"
++ 1 Con Gà"\n"
++ 1 Muỗng cà phê Muối"\n"
++ 1/2 Muỗng cà phê Bột ngọt"\n"
++ 1/2 Miếng Gừng"\n"
++ 1/2 Muỗng cà phê Tiêu"\n"
++ 1 Gói Thuốc bắc (Dùng trong nấu ăn)"\n"
++ 1 Muỗng cà phê Hạt nêm"\n"
+    </string>
+    <string name="cachlam">
+– Lấy cá vị thuốc trong gói thuốc bắc ra rửa sạch rồi sắt khúc những phần dài."\n"
+
+– Gà đem đi rửa sạch rồi sát muối ngoài mình gà và xả lại bằng nước lạnh."\n"
+
+– Chặt gà thành khúc cho dễ hầm hoặc để nguyên cả con nếu muốn."\n"
+
+– Đổ khoảng 500ml nước vào nồi, cho gà và các loại thuốc bắc vào cùng với gừng, nêm bột ngọt, muối, bột nêm, đường và hầm trong 1 tiếng (hoặc dùng nồi áp xuất để ninh)."\n"
+
+– Chuẩn bị thêm đĩa muối tiêu chanh rồi múc gà hầm ra bát là có thể thưởng thức."\n"
+
+Tác dụng của các vị thuốc bắc rất có lợi cho cơ thể được nấu chung với thịt gà thơm ngon sẽ giúp cả gia đình bạn vừa được thưởng thức món ngon vừa tốt cho sức khỏe của cả nhà, thực sự là hiệu quả rất tuyệt vời phải không nào!"\n"
+    </string>
+</resources>

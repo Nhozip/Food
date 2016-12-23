@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:id="@+id/cVCachlam"
+            app:cardElevation="@dimen/spacing_medium"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_large"
+                    android:layout_marginRight="@dimen/spacing_large"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:text="Nguyên liệu"
+                    android:textColor="#07ce15"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+                <TextView
+                    android:id="@+id/txtNguyeLieu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing_large"
+                    android:text="@string/nguyenlieu"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cVCachlam"
+            android:id="@+id/CV_HD"
+            app:cardElevation="@dimen/spacing_medium"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_large"
+                    android:layout_marginRight="@dimen/spacing_large"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:text="Cách làm"
+                    android:textColor="#07ce15"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+                <TextView
+                    android:id="@+id/txtCachLam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing_large"
+                    android:text="@string/cachlam"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <LinearLayout
+            android:layout_below="@+id/CV_HD"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:text="Video hướng dẫn"
+                android:textSize="25dp"
+                android:textColor="#07ce15"
+                android:gravity="center"
+                android:id="@+id/videohd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <fragment
+                android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+                android:id="@+id/youtube_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
